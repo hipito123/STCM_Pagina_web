@@ -2,7 +2,7 @@
 /* ========== IMÁGENES "SOBRE NOSOTROS" (prole1 / prole2) ========== */
     .about-img {
         width: 100%;
-        height: 350px;
+        height: 550px;
         object-fit: cover;
         border-radius: 12px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -10,7 +10,7 @@
 
     @media (max-width: 991.98px) {
         .about-img {
-            height: 260px;
+            height: 320px;
         }
     }
 

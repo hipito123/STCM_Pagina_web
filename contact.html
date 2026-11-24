@@ -90,8 +90,9 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fw-medium text-uppercase text-primary mb-2">Solicitar Cotización</p>
                     <h1 class="display-5 mb-4">Completa el Formulario</h1>
-                    <form id="contactForm" action="https://formsubmit.co/administracion2@stcmperusac.pe" method="POST">
+                    <form id="contactForm" action="https://formsubmit.co/administracion@stcmperusac.pe" method="POST">
                         <!-- Campos ocultos para FormSubmit -->
+                        <input type="hidden" name="_cc" value="administracion2@stcmperusac.pe">
                         <input type="hidden" name="_subject" value="Nueva solicitud de cotización - Sitio Web">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
@@ -141,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Enviar Solicitud</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit">SOLICITAR COTIZACIÓN</button>
                             </div>
                         </div>
                     </form>
@@ -173,19 +174,29 @@
                                 </div>
                                 <div class="ms-3">
                                     <h6 class="mb-1">Email</h6>
-                                    <span><a href="mailto:administracion2@stcmperusac.pe" class="text-decoration-none text-dark">administracion2@stcmperusac.pe</a></span>
+                                    <div class="mb-1">
+                                        <a href="mailto:administracion@stcmperusac.pe" class="text-decoration-none text-dark">administracion@stcmperusac.pe</a>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:administracion2@stcmperusac.pe" class="text-decoration-none text-dark">administracion2@stcmperusac.pe</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Teléfono -->
+                        <!-- Teléfono y WhatsApp -->
                         <div class="col-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0 btn-square bg-primary rounded-circle" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fa fa-phone-alt text-white fa-lg"></i>
                                 </div>
                                 <div class="ms-3">
-                                    <h6 class="mb-1">Teléfono</h6>
-                                    <span><a href="tel:+51934506732" class="text-decoration-none text-dark">+51 934 506 732</a></span>
+                                    <h6 class="mb-1">Teléfono y WhatsApp</h6>
+                                    <div class="d-flex flex-wrap align-items-center gap-2">
+                                        <a href="tel:+51934506732" class="text-decoration-none text-dark fw-bold me-2">+51 934 506 732</a>
+                                        <a href="https://wa.me/51934506732" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success py-1 px-2">
+                                            <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,8 +244,15 @@
                 <div class="col-lg-6 col-md-6">
                     <h5 class="text-white mb-4">Nuestra Oficina</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jr. San Juan Bautista, SMP, Lima</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+51 934 506 732</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sctmcalibraciones@gmail.com</p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><a href="tel:+51934506732" class="text-light text-decoration-none">+51 934 506 732</a>
+                        <span class="mx-2 text-white-50">|</span>
+                        <a href="https://wa.me/51934506732" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">
+                            <i class="fab fa-whatsapp text-success me-1"></i>WhatsApp
+                        </a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion@stcmperusac.pe" class="text-light text-decoration-none">administracion@stcmperusac.pe</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion2@stcmperusac.pe" class="text-light text-decoration-none">administracion2@stcmperusac.pe</a></p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <h5 class="text-white mb-4">Horarios de atención</h5>

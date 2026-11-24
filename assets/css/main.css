@@ -15,6 +15,41 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    font-size: 18px; /* +2px sobre el tamaño base estándar (16px) */
+    line-height: 1.6;
+}
+
+/* Aumento de 2px en el texto de contenido (párrafos, listas, textos de servicios, formularios) sin alterar títulos ni subtítulos */
+p,
+li,
+.service-text p,
+.form-control,
+.form-select,
+.form-floating > label,
+.footer p,
+.footer a,
+.copyright p {
+    font-size: 18px;
+}
+
+/* Preservar tamaño original en subtítulos de sección y categorías */
+p.text-uppercase.text-primary,
+p.fw-medium.text-uppercase,
+.subtitle,
+.section-subtitle {
+    font-size: 1rem;
+}
+
+/* Párrafo descriptivo del carrusel de portada (+2px: de 20px a 22px) */
+#header-carousel .carousel-caption p:not(.text-uppercase) {
+    font-size: 22px;
+}
+
+#header-carousel .carousel-caption p.text-uppercase {
+    font-size: 1.25rem;
+}
+
 
 /*** Identidad visual y colores de STCM ***/
 .stcm-font {
@@ -271,7 +306,7 @@ h6,
     margin-top: 4px;
     color: #454545;
     font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
-    font-size: .58rem;
+    font-size: calc(.58rem + 2px);
     font-weight: 700;
     line-height: 1.25;
     text-align: center;
@@ -333,7 +368,7 @@ h6,
     }
 
     .site-brand-tagline {
-        font-size: .47rem;
+        font-size: calc(.47rem + 2px);
     }
 
     .site-navigation {
@@ -420,7 +455,7 @@ h6,
 
     .site-brand-tagline {
         margin-top: 3px;
-        font-size: .49rem;
+        font-size: calc(.49rem + 2px);
         line-height: 1.2;
     }
 
@@ -448,7 +483,7 @@ h6,
     }
 
     .site-brand-tagline {
-        font-size: .39rem;
+        font-size: calc(.39rem + 2px);
     }
 }
 
@@ -620,6 +655,16 @@ h6,
 /*** Pie de página y créditos ***/
 .footer {
     color: #B0B9AE;
+}
+
+.footer a {
+    color: #e9ecef;
+    transition: color .2s ease;
+}
+
+.footer a:hover {
+    color: var(--primary) !important;
+    text-decoration: underline;
 }
 
 .copyright {
