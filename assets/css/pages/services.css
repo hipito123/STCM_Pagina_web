@@ -87,7 +87,7 @@
 
 .service-card-icon-floating {
     position: absolute;
-    bottom: -22px;
+    top: -26px;
     right: 20px;
     width: 52px;
     height: 52px;
@@ -100,7 +100,7 @@
     font-size: 1.3rem;
     box-shadow: 0 6px 16px rgba(255, 128, 2, 0.4);
     border: 3px solid #fff;
-    z-index: 3;
+    z-index: 5;
     transition: transform 0.3s ease;
 }
 
@@ -109,6 +109,7 @@
 }
 
 .service-card-body {
+    position: relative;
     padding: 28px 24px 22px;
     flex: 1 1 auto;
     display: flex;

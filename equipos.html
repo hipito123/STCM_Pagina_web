@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Venta y Alquiler de Equipos de Laboratorio | STCM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="venta de equipos de laboratorio, alquiler de equipos de laboratorio, refrigeradores thermo fisher, estufas heratherm, incubadora incucell, baño de agua precision" name="keywords">
+    <meta content="Catálogo de equipos científicos e industriales para venta y alquiler con garantía y soporte metrológico en STCM Perú." name="description">
+
+    <!-- Identidad visual: icono mostrado por el navegador -->
+    <link href="assets/images/brand/logo.png" rel="icon">
+
+    <!-- Tipografías externas utilizadas por el sitio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos externos de Font Awesome y Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos de animaciones y carruseles de terceros -->
+    <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Base visual de Bootstrap personalizada para STCM -->
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos globales compartidos por todas las páginas -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Estilos exclusivos de esta página -->
+    <link href="assets/css/pages/equipos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Cargador inicial: visible mientras termina de cargar la página -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Fin del cargador inicial -->
+
+
+    <!-- Navegación principal: marca, enlaces y llamada a cotización -->
+    <nav class="navbar navbar-expand-lg navbar-light site-header sticky-top">
+        <div class="site-header-inner">
+            <a href="index.html" class="navbar-brand site-brand" aria-label="STCM - Inicio">
+                <span class="site-brand-primary">
+                    <img src="assets/images/brand/logo.png" alt="" width="48" height="48">
+                    <span class="site-brand-name">STCM</span>
+                </span>
+                <span class="site-brand-tagline">Servicios Tecnológicos y Consultoría<br>Multisectorial Perú S.A.C</span>
+            </a>
+
+            <button type="button" class="navbar-toggler site-menu-toggle" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse site-navigation" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
+                    <a href="service.html" class="nav-item nav-link">Servicios</a>
+                    <a href="equipos.html" class="nav-item nav-link active" aria-current="page">Venta y Alquiler de Equipos</a>
+                    <a href="contact.html" class="nav-item nav-link">Solicitar cotización</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la navegación principal -->
+
+
+    <!-- Encabezado interior: título y contexto de la página -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white animated slideInRight">Venta y Alquiler de Equipos</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb animated slideInRight mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Venta y Alquiler</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Fin del encabezado interior -->
+
+
+    <!-- Contenido Principal del Catálogo de Equipos -->
+    <div class="container-xxl py-3">
+        <div class="container">
+
+            <!-- Título y descripción introductoria -->
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Equipamiento Científico e Industrial</p>
+                <h1 class="display-5 mb-3">Catálogo Especializado para Laboratorio</h1>
+                <p class="text-muted">Adquiere o alquila instrumental de marcas reconocidas mundialmente (Thermo Fisher Scientific, MMM). Todos los equipos se entregan rigurosamente inspeccionados, con garantía técnica y opción de certificado de calibración metrológica emitido por nuestros laboratorios.</p>
+            </div>
+
+            <!-- Barra de Garantías y Beneficios Estilo Tienda (Trust Bar) -->
+            <div class="equipos-trust-bar wow fadeInUp" data-wow-delay="0.15s">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trust-item">
+                            <div class="trust-item-icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <div>
+                                <h6 class="trust-item-title">Despacho Inmediato</h6>
+                                <p class="trust-item-desc">Disponibilidad en Lima y envíos protegidos a todo el Perú.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trust-item">
+                            <div class="trust-item-icon">
+                                <i class="fa fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h6 class="trust-item-title">Calibración Trazable</h6>
+                                <p class="trust-item-desc">Opción de entrega con informe y certificado metrológico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trust-item">
+                            <div class="trust-item-icon">
+                                <i class="fa fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="trust-item-title">Garantía y Soporte</h6>
+                                <p class="trust-item-desc">Respaldo técnico directo por ingenieros de STCM.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="trust-item">
+                            <div class="trust-item-icon">
+                                <i class="fa fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h6 class="trust-item-title">Venta o Alquiler</h6>
+                                <p class="trust-item-desc">Modalidades flexibles por compra definitiva o alquiler por proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra de Herramientas: Filtros por Categoría y Búsqueda en Vivo -->
+            <div class="equipos-toolbar wow fadeInUp" data-wow-delay="0.2s">
+                <div class="equipos-filter-nav">
+                    <button type="button" class="equipos-filter-btn active" data-filter="all">
+                        <i class="fa fa-th me-1"></i>Todos los equipos (5)
+                    </button>
+                    <button type="button" class="equipos-filter-btn" data-filter="refrigeracion">
+                        <i class="fa fa-snowflake me-1"></i>Refrigeración (2)
+                    </button>
+                    <button type="button" class="equipos-filter-btn" data-filter="estufas">
+                        <i class="fa fa-fire-alt me-1"></i>Estufas (1)
+                    </button>
+                    <button type="button" class="equipos-filter-btn" data-filter="incubadoras">
+                        <i class="fa fa-vial me-1"></i>Incubadoras (1)
+                    </button>
+                    <button type="button" class="equipos-filter-btn" data-filter="banos">
+                        <i class="fa fa-water me-1"></i>Baños con Agitación (1)
+                    </button>
+                </div>
+
+                <div class="equipos-search-box">
+                    <input type="text" id="equiposSearchInput" placeholder="Buscar por marca, modelo o tipo..." autocomplete="off">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Mensaje cuando no hay resultados de búsqueda -->
+            <div id="noResultsMsg" class="alert alert-warning text-center d-none my-4">
+                <i class="fa fa-exclamation-triangle me-2"></i>No se encontraron equipos que coincidan con tu búsqueda. Puedes consultar por WhatsApp por modelos específicos bajo pedido.
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- LISTADO DE EQUIPOS (ESTILO PRODUCT CARDS AMAZON) -->
+            <!-- ============================================================== -->
+            <div id="equiposCatalogList">
+
+                <!-- 1. Refrigerador Thermo Fisher Scientific Forma FRGL404W -->
+                <div class="amazon-product-card wow fadeInUp" data-wow-delay="0.1s" data-category="refrigeracion" data-keywords="refrigerador thermo fisher scientific frgl404w forma frio vacunas reactivos 133l 133 l">
+                    <div class="row g-4 align-items-start">
+                        <!-- Galería con miniaturas interactivas -->
+                        <div class="col-lg-4 col-md-5">
+                            <div class="product-gallery-wrap">
+                                <div class="product-main-view">
+                                    <div class="product-badge-overlay">
+                                        <span class="badge-tag-sale">Venta y Alquiler</span>
+                                        <span class="badge-tag-stock"><i class="fa fa-check-circle me-1"></i>En Stock</span>
+                                    </div>
+                                    <img id="main-img-1" src="assets/images/services/ventas/refri-thermo-fisher-forma-abierto.jpg" alt="Refrigerador Thermo Fisher Scientific Forma FRGL404W">
+                                </div>
+                                <div class="product-thumbnails">
+                                    <div class="thumb-item active" onclick="switchProductImg(1, 'assets/images/services/ventas/refri-thermo-fisher-forma-abierto.jpg', this)" title="Vista interior / abierto">
+                                        <img src="assets/images/services/ventas/refri-thermo-fisher-forma-abierto.jpg" alt="Vista abierto">
+                                    </div>
+                                    <div class="thumb-item" onclick="switchProductImg(1, 'assets/images/services/ventas/refri-thermo-fisher-forma-cerrado.jpg', this)" title="Vista exterior / cerrado">
+                                        <img src="assets/images/services/ventas/refri-thermo-fisher-forma-cerrado.jpg" alt="Vista cerrado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles centrales del equipo -->
+                        <div class="col-lg-5 col-md-7">
+                            <span class="product-brand-tag">Thermo Fisher Scientific &bull; Serie Forma™</span>
+                            <h2 class="product-item-title">Refrigerador de Laboratorio de Alta Calidad Thermo Fisher Scientific Forma™</h2>
+                            
+                            <div class="product-rating-row">
+                                <span class="rating-stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-badge"><i class="fa fa-shield-alt me-1"></i>Grado Laboratorio & Farmacia</span>
+                            </div>
+
+                            <p class="product-summary-desc">Refrigerador de laboratorio de alta calidad Thermo Fisher Scientific +4 °C, modelo <strong>FRGL404W Forma</strong>. Capacidad de 133 L con 3 compartimentos para un amplio almacenamiento de muestras, reactivos y materiales a temperatura estable y controlada.</p>
+
+                            <div class="product-highlights-box">
+                                <div class="product-highlights-title">Acerca de este equipo:</div>
+                                <ul class="product-highlights-list">
+                                    <li>Solución versátil y eficiente en espacio con dimensiones interiores de 50 × 52 × 50 cm y exteriores de 58 × 60 × 68 cm.</li>
+                                    <li>Compatibilidad eléctrica estándar: 220 V / 60 Hz (230 V / 60 Hz) para fácil integración en laboratorio.</li>
+                                    <li>Ideal para muestras sensibles: vacunas, reactivos, patrones y productos farmacéuticos.</li>
+                                    <li>Control térmico preciso y rendimiento confiable continuo.</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-chips-row">
+                                <span class="spec-chip"><i class="fa fa-cube"></i> Capacidad: 133 L</span>
+                                <span class="spec-chip"><i class="fa fa-thermometer-half"></i> Temp: +4 °C</span>
+                                <span class="spec-chip"><i class="fa fa-bolt"></i> 220 V / 60 Hz</span>
+                                <span class="spec-chip"><i class="fa fa-layer-group"></i> 3 Estantes</span>
+                                <span class="spec-chip"><i class="fa fa-weight-hanging"></i> 114 kg</span>
+                            </div>
+
+                            <button class="btn btn-toggle-specs" type="button" data-bs-toggle="collapse" data-bs-target="#specs-card-1" aria-expanded="false" aria-controls="specs-card-1">
+                                <i class="fa fa-list-alt me-1"></i>Ver especificaciones técnicas completas
+                            </button>
+                        </div>
+
+                        <!-- Buy Box lateral estilo Amazon -->
+                        <div class="col-lg-3 col-md-12">
+                            <div class="product-buybox">
+                                <div class="buybox-price-row">
+                                    <div class="buybox-price-label">Precio / Tarifas:</div>
+                                    <div class="buybox-price-val">A consultar</div>
+                                </div>
+                                <div class="buybox-stock-status">
+                                    <i class="fa fa-check-circle"></i> Disponible para entrega
+                                </div>
+                                <div class="buybox-meta">
+                                    <strong>Modalidades:</strong> Venta directa o Alquiler mensual.<br>
+                                    <strong>Garantía:</strong> Respaldo técnico STCM.<br>
+                                    <strong>Ubicación:</strong> Lima, Perú (Envíos a todo el país).
+                                </div>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20estoy%20interesado%20en%20la%20COMPRA%20del%20Refrigerador%20Thermo%20Fisher%20Scientific%20Forma%20(Modelo:%20FRGL404W).%20¿Podrían%20brindarme%20precio%20y%20detalles?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-buy" title="Comprar por WhatsApp">
+                                    <i class="fab fa-whatsapp fa-lg"></i> Comprar / Cotizar
+                                </a>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20solicito%20información%20para%20el%20ALQUILER%20del%20Refrigerador%20Thermo%20Fisher%20Scientific%20Forma%20(Modelo:%20FRGL404W).%20¿Cuáles%20son%20las%20condiciones%20y%20tarifas?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-rent" title="Alquilar por WhatsApp">
+                                    <i class="fa fa-calendar-alt me-1"></i> Consultar por Alquiler
+                                </a>
+
+                                <div class="buybox-assurance">
+                                    <i class="fa fa-lock"></i>
+                                    <span>Consulta directa con especialistas. Cotizaciones formales en menos de 2 horas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica desplegable -->
+                    <div class="collapse specs-collapse-wrap" id="specs-card-1">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-clipboard-check text-primary me-2"></i>Especificaciones Técnicas Detalladas</h6>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr><td>Marca</td><td>Thermo Fisher Scientific</td></tr>
+                                    <tr><td>Modelo</td><td>FRGL404W Forma</td></tr>
+                                    <tr><td>Serie</td><td>Forma™</td></tr>
+                                    <tr><td>Capacidad</td><td>133 L</td></tr>
+                                    <tr><td>Rango de temperatura</td><td>+4 °C</td></tr>
+                                    <tr><td>Dimensiones interiores</td><td>50 cm &times; 52 cm &times; 50 cm</td></tr>
+                                    <tr><td>Dimensiones exteriores</td><td>58 cm &times; 60 cm &times; 68 cm</td></tr>
+                                    <tr><td>Voltaje / frecuencia nominal</td><td>220 V / 60 Hz (230 V / 60 Hz)</td></tr>
+                                    <tr><td>Peso</td><td>114 kg</td></tr>
+                                    <tr><td>Número de estantes</td><td>3 compartimentos</td></tr>
+                                    <tr><td>Incluye</td><td>Cable de alimentación / Manual de usuario</td></tr>
+                                    <tr><td>Aplicación principal</td><td>Muestras sensibles, vacunas, reactivos químicos y productos farmacéuticos</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 2. Refrigerador Thermo Fisher Scientific ES Series 151R-AEC-TSC -->
+                <div class="amazon-product-card wow fadeInUp" data-wow-delay="0.15s" data-category="refrigeracion" data-keywords="refrigerador thermo fisher scientific es series 151r-aec-tsc 151l 151 l frio alarmas digital ecologico">
+                    <div class="row g-4 align-items-start">
+                        <!-- Galería con miniaturas interactivas -->
+                        <div class="col-lg-4 col-md-5">
+                            <div class="product-gallery-wrap">
+                                <div class="product-main-view">
+                                    <div class="product-badge-overlay">
+                                        <span class="badge-tag-sale">Venta y Alquiler</span>
+                                        <span class="badge-tag-stock"><i class="fa fa-check-circle me-1"></i>En Stock</span>
+                                    </div>
+                                    <img id="main-img-2" src="assets/images/services/ventas/refri-thermo-fisher-ES-Series-abierto.jpg" alt="Refrigerador Thermo Fisher Scientific ES Series 151R-AEC-TSC">
+                                </div>
+                                <div class="product-thumbnails">
+                                    <div class="thumb-item active" onclick="switchProductImg(2, 'assets/images/services/ventas/refri-thermo-fisher-ES-Series-abierto.jpg', this)" title="Vista interior / abierto">
+                                        <img src="assets/images/services/ventas/refri-thermo-fisher-ES-Series-abierto.jpg" alt="Vista abierto">
+                                    </div>
+                                    <div class="thumb-item" onclick="switchProductImg(2, 'assets/images/services/ventas/refri-thermo-fisher-ES-Series-cerrado.jpg', this)" title="Vista exterior / cerrado">
+                                        <img src="assets/images/services/ventas/refri-thermo-fisher-ES-Series-cerrado.jpg" alt="Vista cerrado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles centrales del equipo -->
+                        <div class="col-lg-5 col-md-7">
+                            <span class="product-brand-tag">Thermo Fisher Scientific &bull; Serie ES Series™</span>
+                            <h2 class="product-item-title">Refrigerador de Laboratorio de Alta Calidad Thermo Fisher Scientific ES Series™</h2>
+                            
+                            <div class="product-rating-row">
+                                <span class="rating-stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-badge"><i class="fa fa-leaf me-1"></i>Bajo Consumo & Eco-Refrigerante</span>
+                            </div>
+
+                            <p class="product-summary-desc">Refrigerador Thermo Fisher Scientific modelo <strong>151R-AEC-TSC</strong> de la serie ES, diseñado para la protección rutinaria de muestras de laboratorio en espacios limitados con máxima seguridad operativa.</p>
+
+                            <div class="product-highlights-box">
+                                <div class="product-highlights-title">Acerca de este equipo:</div>
+                                <ul class="product-highlights-list">
+                                    <li>Capacidad de 151 L con dimensiones interiores de 63 × 60 × 84 cm y exteriores de 71 × 68 × 99 cm.</li>
+                                    <li>Controlador integrado, pantalla digital, alarmas de alta/baja temperatura y alarma de puerta entreabierta.</li>
+                                    <li>Contactos de alarma remotos, cerraduras de seguridad estándar y puertos de acceso para sondas.</li>
+                                    <li>Refrigerantes de hidrocarburos de alta eficiencia con aislamiento ecológico libre de HCFC y CFC, marcado CE.</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-chips-row">
+                                <span class="spec-chip"><i class="fa fa-cube"></i> Capacidad: 151 L</span>
+                                <span class="spec-chip"><i class="fa fa-bell"></i> Alarmas Remotas</span>
+                                <span class="spec-chip"><i class="fa fa-bolt"></i> 220 V / 60 Hz</span>
+                                <span class="spec-chip"><i class="fa fa-lock"></i> Cerradura de Puerta</span>
+                                <span class="spec-chip"><i class="fa fa-weight-hanging"></i> 92,5 kg</span>
+                            </div>
+
+                            <button class="btn btn-toggle-specs" type="button" data-bs-toggle="collapse" data-bs-target="#specs-card-2" aria-expanded="false" aria-controls="specs-card-2">
+                                <i class="fa fa-list-alt me-1"></i>Ver especificaciones técnicas completas
+                            </button>
+                        </div>
+
+                        <!-- Buy Box lateral estilo Amazon -->
+                        <div class="col-lg-3 col-md-12">
+                            <div class="product-buybox">
+                                <div class="buybox-price-row">
+                                    <div class="buybox-price-label">Precio / Tarifas:</div>
+                                    <div class="buybox-price-val">A consultar</div>
+                                </div>
+                                <div class="buybox-stock-status">
+                                    <i class="fa fa-check-circle"></i> Disponible para entrega
+                                </div>
+                                <div class="buybox-meta">
+                                    <strong>Modalidades:</strong> Venta directa o Alquiler mensual.<br>
+                                    <strong>Garantía:</strong> Respaldo técnico STCM.<br>
+                                    <strong>Ubicación:</strong> Lima, Perú (Envíos a todo el país).
+                                </div>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20estoy%20interesado%20en%20la%20COMPRA%20del%20Refrigerador%20Thermo%20Fisher%20Scientific%20ES%20Series%20(Modelo:%20151R-AEC-TSC).%20¿Podrían%20brindarme%20precio%20y%20detalles?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-buy" title="Comprar por WhatsApp">
+                                    <i class="fab fa-whatsapp fa-lg"></i> Comprar / Cotizar
+                                </a>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20solicito%20información%20para%20el%20ALQUILER%20del%20Refrigerador%20Thermo%20Fisher%20Scientific%20ES%20Series%20(Modelo:%20151R-AEC-TSC).%20¿Cuáles%20son%20las%20condiciones%20y%20tarifas?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-rent" title="Alquilar por WhatsApp">
+                                    <i class="fa fa-calendar-alt me-1"></i> Consultar por Alquiler
+                                </a>
+
+                                <div class="buybox-assurance">
+                                    <i class="fa fa-lock"></i>
+                                    <span>Consulta directa con especialistas. Cotizaciones formales en menos de 2 horas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica desplegable -->
+                    <div class="collapse specs-collapse-wrap" id="specs-card-2">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-clipboard-check text-primary me-2"></i>Especificaciones Técnicas Detalladas</h6>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr><td>Marca</td><td>Thermo Fisher Scientific</td></tr>
+                                    <tr><td>Modelo</td><td>151R-AEC-TSC</td></tr>
+                                    <tr><td>Serie</td><td>ES Series™</td></tr>
+                                    <tr><td>Capacidad</td><td>151 L</td></tr>
+                                    <tr><td>Dimensiones interiores</td><td>63 cm &times; 60 cm &times; 84 cm</td></tr>
+                                    <tr><td>Dimensiones exteriores</td><td>71 cm &times; 68 cm &times; 99 cm</td></tr>
+                                    <tr><td>Voltaje / frecuencia nominal</td><td>220 V / 60 Hz (230 V / 60 Hz)</td></tr>
+                                    <tr><td>Peso</td><td>92,5 kg</td></tr>
+                                    <tr><td>Incluye</td><td>Controlador integrado, Pantalla digital, Alarmas de alta y baja temperatura, Contactos de alarma remota, Cerraduras de puerta estándar</td></tr>
+                                    <tr><td>Seguridad y accesibilidad</td><td>Puertas reversibles, puertos de acceso para cableado de sensores, refrigerantes libres de HCFC y CFC, marcado CE</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 3. Estufas de Seguridad Thermo Fisher Heratherm OMH180-S -->
+                <div class="amazon-product-card wow fadeInUp" data-wow-delay="0.2s" data-category="estufas" data-keywords="estufa horno secado thermo fisher scientific heratherm omh180-s 51028156 conveccion calor 170l 170 l 330c 330 c">
+                    <div class="row g-4 align-items-start">
+                        <!-- Galería con miniaturas interactivas -->
+                        <div class="col-lg-4 col-md-5">
+                            <div class="product-gallery-wrap">
+                                <div class="product-main-view">
+                                    <div class="product-badge-overlay">
+                                        <span class="badge-tag-sale">Venta y Alquiler</span>
+                                        <span class="badge-tag-stock"><i class="fa fa-check-circle me-1"></i>En Stock</span>
+                                    </div>
+                                    <img id="main-img-3" src="assets/images/services/ventas/estufa-heratherm-1.jpg" alt="Estufa Thermo Fisher Scientific Heratherm OMH180-S">
+                                </div>
+                                <div class="product-thumbnails">
+                                    <div class="thumb-item active" onclick="switchProductImg(3, 'assets/images/services/ventas/estufa-heratherm-1.jpg', this)" title="Vista general / frontal">
+                                        <img src="assets/images/services/ventas/estufa-heratherm-1.jpg" alt="Vista 1">
+                                    </div>
+                                    <div class="thumb-item" onclick="switchProductImg(3, 'assets/images/services/ventas/estufa-heratherm-2.jpg', this)" title="Vista en ángulo / interior">
+                                        <img src="assets/images/services/ventas/estufa-heratherm-2.jpg" alt="Vista 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles centrales del equipo -->
+                        <div class="col-lg-5 col-md-7">
+                            <span class="product-brand-tag">Thermo Fisher Scientific &bull; Heratherm™</span>
+                            <h2 class="product-item-title">Estufas de Seguridad de Protocolo Avanzado Thermo Fisher Scientific Heratherm™</h2>
+                            
+                            <div class="product-rating-row">
+                                <span class="rating-stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-badge"><i class="fa fa-temperature-high me-1"></i>Hasta 330 °C &bull; Exactitud ±0,2 °C</span>
+                            </div>
+
+                            <p class="product-summary-desc">Estufas de seguridad de protocolo avanzado Thermo Scientific Heratherm™, modelo <strong>51028156 / OMH180-S</strong>. Cuentan con un amplio rango térmico hasta 330 °C y temporizador digital avanzado para ciclos programados diarios o semanales.</p>
+
+                            <div class="product-highlights-box">
+                                <div class="product-highlights-title">Acerca de este equipo:</div>
+                                <ul class="product-highlights-list">
+                                    <li>Interior de acero inoxidable resistente a la corrosión y fácil de higienizar (calidad AISI 304).</li>
+                                    <li>Puerto de acceso trasero que permite introducir sensores externos para monitoreo independiente de datos.</li>
+                                    <li>Sencilla rutina de calibración para garantizar la máxima precisión en el tiempo (desviación temporal de apenas &plusmn;0,2 °C).</li>
+                                    <li>Función Boost de calentamiento rápido que optimiza los tiempos de secado y esterilización.</li>
+                                    <li>Puerta provista de cerradura para restringir el acceso y proteger los ensayos en curso.</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-chips-row">
+                                <span class="spec-chip"><i class="fa fa-cube"></i> Volumen: 170 L</span>
+                                <span class="spec-chip"><i class="fa fa-fire"></i> 50 °C a 330 °C</span>
+                                <span class="spec-chip"><i class="fa fa-wind"></i> Convección Mecánica</span>
+                                <span class="spec-chip"><i class="fa fa-shield-alt"></i> Acero AISI 304</span>
+                                <span class="spec-chip"><i class="fa fa-bolt"></i> 220 V / 50-60 Hz</span>
+                            </div>
+
+                            <button class="btn btn-toggle-specs" type="button" data-bs-toggle="collapse" data-bs-target="#specs-card-3" aria-expanded="false" aria-controls="specs-card-3">
+                                <i class="fa fa-list-alt me-1"></i>Ver especificaciones técnicas completas
+                            </button>
+                        </div>
+
+                        <!-- Buy Box lateral estilo Amazon -->
+                        <div class="col-lg-3 col-md-12">
+                            <div class="product-buybox">
+                                <div class="buybox-price-row">
+                                    <div class="buybox-price-label">Precio / Tarifas:</div>
+                                    <div class="buybox-price-val">A consultar</div>
+                                </div>
+                                <div class="buybox-stock-status">
+                                    <i class="fa fa-check-circle"></i> Disponible para entrega
+                                </div>
+                                <div class="buybox-meta">
+                                    <strong>Modalidades:</strong> Venta directa o Alquiler mensual.<br>
+                                    <strong>Garantía:</strong> Respaldo técnico STCM.<br>
+                                    <strong>Ubicación:</strong> Lima, Perú (Envíos a todo el país).
+                                </div>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20estoy%20interesado%20en%20la%20COMPRA%20de%20la%20Estufa%20Thermo%20Fisher%20Scientific%20Heratherm%20(Modelo:%20OMH180-S%20/%2051028156).%20¿Podrían%20brindarme%20precio%20y%20detalles?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-buy" title="Comprar por WhatsApp">
+                                    <i class="fab fa-whatsapp fa-lg"></i> Comprar / Cotizar
+                                </a>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20solicito%20información%20para%20el%20ALQUILER%20de%20la%20Estufa%20Thermo%20Fisher%20Scientific%20Heratherm%20(Modelo:%20OMH180-S%20/%2051028156).%20¿Cuáles%20son%20las%20condiciones%20y%20tarifas?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-rent" title="Alquilar por WhatsApp">
+                                    <i class="fa fa-calendar-alt me-1"></i> Consultar por Alquiler
+                                </a>
+
+                                <div class="buybox-assurance">
+                                    <i class="fa fa-lock"></i>
+                                    <span>Consulta directa con especialistas. Cotizaciones formales en menos de 2 horas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica desplegable -->
+                    <div class="collapse specs-collapse-wrap" id="specs-card-3">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-clipboard-check text-primary me-2"></i>Especificaciones Técnicas Detalladas</h6>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr><td>Marca</td><td>Thermo Fisher Scientific Heratherm™</td></tr>
+                                    <tr><td>Modelo</td><td>51028156 (exterior) / OMH180-S</td></tr>
+                                    <tr><td>Tecnología de convección</td><td>Convección mecánica asistida</td></tr>
+                                    <tr><td>Rango de temperatura</td><td>50 °C a 330 °C</td></tr>
+                                    <tr><td>Desviación de temperatura en el tiempo</td><td>&plusmn;0,2 °C</td></tr>
+                                    <tr><td>Volumen de la cámara</td><td>170 L</td></tr>
+                                    <tr><td>Dimensiones interiores</td><td>51,8 cm &times; 46,4 cm &times; 70,8 cm</td></tr>
+                                    <tr><td>Dimensiones exteriores</td><td>73,8 cm &times; 64 cm &times; 92 cm</td></tr>
+                                    <tr><td>Número de estantes</td><td>2 incluidos / 19 máximo</td></tr>
+                                    <tr><td>Voltaje / frecuencia nominal</td><td>220 V / 50&ndash;60 Hz</td></tr>
+                                    <tr><td>Funcionalidades clave</td><td>Temporizador digital diario/semanal, función Boost, puerto de acceso y puerta con cerradura</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 4. Incubadora de Laboratorio MMM Incucell 22 ECO -->
+                <div class="amazon-product-card wow fadeInUp" data-wow-delay="0.25s" data-category="incubadoras" data-keywords="incubadora mmm incucell 22 eco h211689 microbiologia cultivos 22l 22 l fuzzy logic temperatura">
+                    <div class="row g-4 align-items-start">
+                        <!-- Galería con miniaturas interactivas -->
+                        <div class="col-lg-4 col-md-5">
+                            <div class="product-gallery-wrap">
+                                <div class="product-main-view">
+                                    <div class="product-badge-overlay">
+                                        <span class="badge-tag-sale">Venta y Alquiler</span>
+                                        <span class="badge-tag-stock"><i class="fa fa-check-circle me-1"></i>En Stock</span>
+                                    </div>
+                                    <img id="main-img-4" src="assets/images/services/ventas/incucell-1.jpg" alt="Incubadora de Laboratorio MMM Incucell ECO 22">
+                                </div>
+                                <div class="product-thumbnails">
+                                    <div class="thumb-item active" onclick="switchProductImg(4, 'assets/images/services/ventas/incucell-1.jpg', this)" title="Vista frontal del equipo">
+                                        <img src="assets/images/services/ventas/incucell-1.jpg" alt="Vista 1">
+                                    </div>
+                                    <div class="thumb-item" onclick="switchProductImg(4, 'assets/images/services/ventas/incucell-2.jpg', this)" title="Vista lateral / panel">
+                                        <img src="assets/images/services/ventas/incucell-2.jpg" alt="Vista 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles centrales del equipo -->
+                        <div class="col-lg-5 col-md-7">
+                            <span class="product-brand-tag">MMM Medcenter &bull; Incucell ECO</span>
+                            <h2 class="product-item-title">Incubadora de Laboratorio Incucell 22° MMM</h2>
+                            
+                            <div class="product-rating-row">
+                                <span class="rating-stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-badge"><i class="fa fa-microchip me-1"></i>Fuzzy Logic &bull; Normativa DIN 12 880 T2</span>
+                            </div>
+
+                            <p class="product-summary-desc">Incubadora de laboratorio de alta gama <strong>MMM Incucell ECO H211689</strong> con volumen útil de 22 litros. Rango operativo desde 5 °C sobre temperatura ambiente hasta 100 °C, orientada al cultivo seguro de muestras microbiológicas.</p>
+
+                            <div class="product-highlights-box">
+                                <div class="product-highlights-title">Acerca de este equipo:</div>
+                                <ul class="product-highlights-list">
+                                    <li>Funcionamiento ultrasilencioso con distribución de flujo de aire suave y homogéneo.</li>
+                                    <li>Alto confort operativo y tiempos ultracortos de recuperación térmica tras la apertura de la puerta.</li>
+                                    <li>Calentamiento y secado seguro para el procesamiento riguroso de cultivos microbiológicos.</li>
+                                    <li>Sistema de control inteligente con microprocesador Fuzzy Logic, teclado de membrana y pantalla LED nítida.</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-chips-row">
+                                <span class="spec-chip"><i class="fa fa-cube"></i> Volumen: 22 L</span>
+                                <span class="spec-chip"><i class="fa fa-thermometer-half"></i> Amb +5 °C a 100 °C</span>
+                                <span class="spec-chip"><i class="fa fa-microchip"></i> Fuzzy Logic LED</span>
+                                <span class="spec-chip"><i class="fa fa-weight-hanging"></i> 31 kg</span>
+                                <span class="spec-chip"><i class="fa fa-bolt"></i> 220 V / 50-60 Hz</span>
+                            </div>
+
+                            <button class="btn btn-toggle-specs" type="button" data-bs-toggle="collapse" data-bs-target="#specs-card-4" aria-expanded="false" aria-controls="specs-card-4">
+                                <i class="fa fa-list-alt me-1"></i>Ver especificaciones técnicas completas
+                            </button>
+                        </div>
+
+                        <!-- Buy Box lateral estilo Amazon -->
+                        <div class="col-lg-3 col-md-12">
+                            <div class="product-buybox">
+                                <div class="buybox-price-row">
+                                    <div class="buybox-price-label">Precio / Tarifas:</div>
+                                    <div class="buybox-price-val">A consultar</div>
+                                </div>
+                                <div class="buybox-stock-status">
+                                    <i class="fa fa-check-circle"></i> Disponible para entrega
+                                </div>
+                                <div class="buybox-meta">
+                                    <strong>Modalidades:</strong> Venta directa o Alquiler mensual.<br>
+                                    <strong>Garantía:</strong> Respaldo técnico STCM.<br>
+                                    <strong>Ubicación:</strong> Lima, Perú (Envíos a todo el país).
+                                </div>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20estoy%20interesado%20en%20la%20COMPRA%20de%20la%20Incubadora%20MMM%20Incucell%2022%20(Modelo:%20ECO%20H211689).%20¿Podrían%20brindarme%20precio%20y%20detalles?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-buy" title="Comprar por WhatsApp">
+                                    <i class="fab fa-whatsapp fa-lg"></i> Comprar / Cotizar
+                                </a>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20solicito%20información%20para%20el%20ALQUILER%20de%20la%20Incubadora%20MMM%20Incucell%2022%20(Modelo:%20ECO%20H211689).%20¿Cuáles%20son%20las%20condiciones%20y%20tarifas?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-rent" title="Alquilar por WhatsApp">
+                                    <i class="fa fa-calendar-alt me-1"></i> Consultar por Alquiler
+                                </a>
+
+                                <div class="buybox-assurance">
+                                    <i class="fa fa-lock"></i>
+                                    <span>Consulta directa con especialistas. Cotizaciones formales en menos de 2 horas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica desplegable -->
+                    <div class="collapse specs-collapse-wrap" id="specs-card-4">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-clipboard-check text-primary me-2"></i>Especificaciones Técnicas Detalladas</h6>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr><td>Marca</td><td>MMM Medcenter</td></tr>
+                                    <tr><td>Modelo</td><td>Incucell ECO H211689</td></tr>
+                                    <tr><td>Volumen útil</td><td>22 L</td></tr>
+                                    <tr><td>Rango de temperatura</td><td>Desde 5 °C sobre temp. ambiente hasta 100 °C</td></tr>
+                                    <tr><td>Desviación temporal (DIN 12 880 T2)</td><td>Aprox. &plusmn;0,4 °C</td></tr>
+                                    <tr><td>Desviación espacial (DIN 12 880 T2)</td><td>Aprox. &plusmn;1,1 °C</td></tr>
+                                    <tr><td>Bandejas / estantes</td><td>2 estándar / 4 capacidad máxima</td></tr>
+                                    <tr><td>Dimensiones interiores</td><td>240 &times; 350 &times; 300 mm</td></tr>
+                                    <tr><td>Dimensiones exteriores</td><td>406 &times; 560 &times; 610 mm</td></tr>
+                                    <tr><td>Peso neto</td><td>31 kg</td></tr>
+                                    <tr><td>Voltaje / frecuencia nominal</td><td>220 V / 50&ndash;60 Hz</td></tr>
+                                    <tr><td>Control</td><td>Microprocesador Fuzzy Logic con pantalla LED y teclado de membrana</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 5. Baño de Agua con Agitación Thermo Fisher Precision 2876 -->
+                <div class="amazon-product-card wow fadeInUp" data-wow-delay="0.3s" data-category="banos" data-keywords="baño maria agua agitacion thermo fisher scientific precision 2876 rpm oscilaciones termostatico">
+                    <div class="row g-4 align-items-start">
+                        <!-- Galería con miniaturas interactivas -->
+                        <div class="col-lg-4 col-md-5">
+                            <div class="product-gallery-wrap">
+                                <div class="product-main-view">
+                                    <div class="product-badge-overlay">
+                                        <span class="badge-tag-sale">Venta y Alquiler</span>
+                                        <span class="badge-tag-stock"><i class="fa fa-check-circle me-1"></i>En Stock</span>
+                                    </div>
+                                    <img id="main-img-5" src="assets/images/services/ventas/precision-1.jpg" alt="Baño de Agua con Agitación Thermo Fisher Scientific Precision">
+                                </div>
+                                <div class="product-thumbnails">
+                                    <div class="thumb-item active" onclick="switchProductImg(5, 'assets/images/services/ventas/precision-1.jpg', this)" title="Vista superior / frontal">
+                                        <img src="assets/images/services/ventas/precision-1.jpg" alt="Vista 1">
+                                    </div>
+                                    <div class="thumb-item" onclick="switchProductImg(5, 'assets/images/services/ventas/precision-2.jpg', this)" title="Vista interior de la cuba">
+                                        <img src="assets/images/services/ventas/precision-2.jpg" alt="Vista 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detalles centrales del equipo -->
+                        <div class="col-lg-5 col-md-7">
+                            <span class="product-brand-tag">Thermo Fisher Scientific &bull; Precision™</span>
+                            <h2 class="product-item-title">Baño de Agua con Agitación Thermo Fisher Scientific Precision™</h2>
+                            
+                            <div class="product-rating-row">
+                                <span class="rating-stars">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </span>
+                                <span class="rating-score">5.0</span>
+                                <span class="rating-badge"><i class="fa fa-tachometer-alt me-1"></i>Uniformidad &plusmn;0,05 °C &bull; 30 a 200 RPM</span>
+                            </div>
+
+                            <p class="product-summary-desc">Baño de agua oscilante de forma poco profunda Thermo Scientific™ Precision, modelo <strong>2876</strong>. Ofrece máxima comodidad con pulsadores digitales para el control exacto de temperatura y velocidad de agitación en ensayos científicos.</p>
+
+                            <div class="product-highlights-box">
+                                <div class="product-highlights-title">Acerca de este equipo:</div>
+                                <ul class="product-highlights-list">
+                                    <li>Agitación de muestras con excelente uniformidad térmica (&plusmn;0,05 °C a 37 °C) y baja desviación temporal (&plusmn;0,05 °C).</li>
+                                    <li>Microprocesador que controla los ajustes desde la pantalla superior con facilidad operativa.</li>
+                                    <li>Construcción resistente a la corrosión con cuba interior, bandeja y tapa de acero inoxidable.</li>
+                                    <li>Capacidad de 14,5 L (3,9 galones) con agitación variable entre 30 y 200 oscilaciones por minuto (resolución de 5 rpm).</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-chips-row">
+                                <span class="spec-chip"><i class="fa fa-water"></i> Capacidad: 14,5 L</span>
+                                <span class="spec-chip"><i class="fa fa-tachometer-alt"></i> 30 - 200 RPM</span>
+                                <span class="spec-chip"><i class="fa fa-thermometer-half"></i> Hasta 99,9 °C</span>
+                                <span class="spec-chip"><i class="fa fa-shield-alt"></i> Tapa Inoxidable</span>
+                                <span class="spec-chip"><i class="fa fa-bolt"></i> 220 V / 50-60 Hz</span>
+                            </div>
+
+                            <button class="btn btn-toggle-specs" type="button" data-bs-toggle="collapse" data-bs-target="#specs-card-5" aria-expanded="false" aria-controls="specs-card-5">
+                                <i class="fa fa-list-alt me-1"></i>Ver especificaciones técnicas completas
+                            </button>
+                        </div>
+
+                        <!-- Buy Box lateral estilo Amazon -->
+                        <div class="col-lg-3 col-md-12">
+                            <div class="product-buybox">
+                                <div class="buybox-price-row">
+                                    <div class="buybox-price-label">Precio / Tarifas:</div>
+                                    <div class="buybox-price-val">A consultar</div>
+                                </div>
+                                <div class="buybox-stock-status">
+                                    <i class="fa fa-check-circle"></i> Disponible para entrega
+                                </div>
+                                <div class="buybox-meta">
+                                    <strong>Modalidades:</strong> Venta directa o Alquiler mensual.<br>
+                                    <strong>Garantía:</strong> Respaldo técnico STCM.<br>
+                                    <strong>Ubicación:</strong> Lima, Perú (Envíos a todo el país).
+                                </div>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20estoy%20interesado%20en%20la%20COMPRA%20del%20Baño%20de%20Agua%20con%20Agitación%20Thermo%20Fisher%20Scientific%20Precision%20(Modelo:%202876).%20¿Podrían%20brindarme%20precio%20y%20detalles?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-buy" title="Comprar por WhatsApp">
+                                    <i class="fab fa-whatsapp fa-lg"></i> Comprar / Cotizar
+                                </a>
+
+                                <a href="https://wa.me/51934506732?text=Hola,%20solicito%20información%20para%20el%20ALQUILER%20del%20Baño%20de%20Agua%20con%20Agitación%20Thermo%20Fisher%20Scientific%20Precision%20(Modelo:%202876).%20¿Cuáles%20son%20las%20condiciones%20y%20tarifas?" 
+                                   target="_blank" rel="noopener noreferrer" class="btn-amazon-rent" title="Alquilar por WhatsApp">
+                                    <i class="fa fa-calendar-alt me-1"></i> Consultar por Alquiler
+                                </a>
+
+                                <div class="buybox-assurance">
+                                    <i class="fa fa-lock"></i>
+                                    <span>Consulta directa con especialistas. Cotizaciones formales en menos de 2 horas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha técnica desplegable -->
+                    <div class="collapse specs-collapse-wrap" id="specs-card-5">
+                        <h6 class="fw-bold text-secondary mb-3"><i class="fa fa-clipboard-check text-primary me-2"></i>Especificaciones Técnicas Detalladas</h6>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr><td>Marca</td><td>Thermo Fisher Scientific</td></tr>
+                                    <tr><td>Modelo</td><td>2876 Precision™</td></tr>
+                                    <tr><td>Capacidad de la cuba</td><td>14,5 L (3,9 galones)</td></tr>
+                                    <tr><td>Rango de temperatura</td><td>Ambiente +5 °C hasta 99,9 °C</td></tr>
+                                    <tr><td>Uniformidad de temperatura a 37 °C</td><td>&plusmn;0,05 °C</td></tr>
+                                    <tr><td>Desviación temporal a 37 °C</td><td>&plusmn;0,05 °C</td></tr>
+                                    <tr><td>Velocidad de agitación (RPM)</td><td>De 30 a 200 rpm (resolución: 5 rpm)</td></tr>
+                                    <tr><td>Dimensiones interiores</td><td>30,5 cm &times; 38,1 cm &times; 19,05 cm</td></tr>
+                                    <tr><td>Dimensiones exteriores</td><td>35,6 cm &times; 62,2 cm &times; 24,1 cm</td></tr>
+                                    <tr><td>Voltaje / frecuencia nominal</td><td>220 V / 50&ndash;60 Hz</td></tr>
+                                    <tr><td>Materiales y accesorios</td><td>Cuba y bandeja de acero inoxidable resistente a la corrosión, tapa de acero inoxidable incluida</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fin de catálogo de productos -->
+
+
+            <!-- Banner Inferior de Asesoría Personalizada y Pedidos a Medida -->
+            <div class="equipos-cta-banner wow fadeInUp" data-wow-delay="0.2s">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <h3 class="equipos-cta-title"><i class="fa fa-search-plus me-2"></i>¿Buscas un equipo o modelo con especificaciones especiales?</h3>
+                        <p class="equipos-cta-desc">En STCM asesoramos a tu empresa en la selección, importación, puesta en marcha y calificación de equipos para laboratorio e industria. Contáctanos con tus requerimientos técnicos para una propuesta a tu medida.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="https://wa.me/51934506732?text=Hola,%20busco%20asesoría%20para%20adquirir%20o%20alquilar%20equipos%20especiales%20de%20laboratorio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg rounded-pill px-4 fw-bold shadow">
+                            <i class="fab fa-whatsapp me-2"></i>Hablar con un Asesor
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Pie de página: contacto, navegación y horarios -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Nuestra Oficina</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jr. San Juan Bautista Nro. 268, Lima</p>
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i><a href="tel:+51934506732" class="text-light text-decoration-none">+51 934 506 732</a>
+                        <span class="mx-2 text-white-50">|</span>
+                        <a href="https://wa.me/51934506732" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none">
+                            <i class="fab fa-whatsapp text-success me-1"></i>WhatsApp
+                        </a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion@stcmperusac.pe" class="text-light text-decoration-none">administracion@stcmperusac.pe</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:administracion2@stcmperusac.pe" class="text-light text-decoration-none">administracion2@stcmperusac.pe</a></p>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h5 class="text-white mb-4">Horarios de atención</h5>
+                    <p class="mb-1">Lunes - Viernes</p>
+                    <h6 class="text-light">08:00 am - 06:00 pm</h6>
+                    <p class="mb-1">Sábado</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Cerrado</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del pie de página -->
+
+
+    <!-- Créditos legales y de la plantilla -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="index.html">STCM</a>, All Right Reserved.</p>
+            <p class="mb-0">Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed By: <a href="https://themewagon.com">ThemeWagon</a></p>
+        </div>
+    </div>
+    <!-- Fin de créditos -->
+
+
+    <!-- Acción flotante para regresar al inicio -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- Librerías de JavaScript requeridas -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+
+    <!-- Comportamiento compartido del sitio -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Lógica Interactiva para Galería y Filtros del Catálogo -->
+    <script>
+        // Función interactiva para cambiar imagen principal al hacer clic en miniaturas
+        function switchProductImg(productId, imgSrc, thumbElement) {
+            var mainImg = document.getElementById('main-img-' + productId);
+            if (mainImg) {
+                mainImg.style.opacity = '0.3';
+                setTimeout(function () {
+                    mainImg.src = imgSrc;
+                    mainImg.style.opacity = '1';
+                }, 150);
+            }
+            if (thumbElement && thumbElement.parentElement) {
+                var thumbs = thumbElement.parentElement.querySelectorAll('.thumb-item');
+                thumbs.forEach(function (t) { t.classList.remove('active'); });
+                thumbElement.classList.add('active');
+            }
+        }
+
+        // Filtrado dinámico por categoría y búsqueda en tiempo real
+        document.addEventListener('DOMContentLoaded', function () {
+            var filterBtns = document.querySelectorAll('.equipos-filter-btn');
+            var productCards = document.querySelectorAll('.amazon-product-card');
+            var searchInput = document.getElementById('equiposSearchInput');
+            var noResultsMsg = document.getElementById('noResultsMsg');
+
+            var currentCategory = 'all';
+            var currentSearch = '';
+
+            function updateCatalogView() {
+                var visibleCount = 0;
+
+                productCards.forEach(function (card) {
+                    var cardCategory = card.getAttribute('data-category');
+                    var cardKeywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+                    var cardText = card.innerText.toLowerCase();
+
+                    var matchesCategory = (currentCategory === 'all' || cardCategory === currentCategory);
+                    var matchesSearch = (currentSearch === '' || cardKeywords.includes(currentSearch) || cardText.includes(currentSearch));
+
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (noResultsMsg) {
+                    if (visibleCount === 0) {
+                        noResultsMsg.classList.remove('d-none');
+                    } else {
+                        noResultsMsg.classList.add('d-none');
+                    }
+                }
+            }
+
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    filterBtns.forEach(function (b) { b.classList.remove('active'); });
+                    this.classList.add('active');
+                    currentCategory = this.getAttribute('data-filter') || 'all';
+                    updateCatalogView();
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function () {
+                    currentSearch = this.value.trim().toLowerCase();
+                    updateCatalogView();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
