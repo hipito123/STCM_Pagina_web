@@ -109,38 +109,27 @@ a[href^="mailto:"],
    4. SMARTPHONES GRANDES Y MÓVILES HORIZONTALES (<= 767.98px)
    -------------------------------------------------------------------------- */
 @media (max-width: 767.98px) {
-    /* Carrusel de portada: contenido adaptable que nunca se corta ni solapa */
+    /* Carrusel de portada: altura y distribución ajustada para móviles sin romper el ciclo de Bootstrap */
     #header-carousel .carousel-inner {
         overflow: hidden;
     }
 
     #header-carousel .carousel-item {
-        position: relative;
-        min-height: auto;
-        display: flex;
-        align-items: stretch;
+        min-height: 540px;
     }
 
-    #header-carousel .carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    #header-carousel .carousel-item.active,
+    #header-carousel .carousel-item-next,
+    #header-carousel .carousel-item-prev {
+        display: block;
+    }
+
+    #header-carousel .carousel-item:not(.active):not(.carousel-item-next):not(.carousel-item-prev) {
+        display: none !important;
     }
 
     #header-carousel .carousel-caption {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        min-height: 520px;
-        padding: 4.5rem 3.5rem 3.5rem;
+        padding: 5rem 3.5rem 3.5rem;
     }
 
     #header-carousel .carousel-caption .container {
