@@ -109,34 +109,81 @@ a[href^="mailto:"],
    4. SMARTPHONES GRANDES Y MÓVILES HORIZONTALES (<= 767.98px)
    -------------------------------------------------------------------------- */
 @media (max-width: 767.98px) {
-    /* Carrusel de portada: espacio lateral para que las flechas no tapen el texto */
+    /* Carrusel de portada: altura y distribución ajustada para móviles sin romper el ciclo de Bootstrap */
+    #header-carousel .carousel-inner {
+        overflow: hidden;
+    }
+
     #header-carousel .carousel-item {
-        min-height: 460px;
+        min-height: 540px;
+    }
+
+    #header-carousel .carousel-item.active,
+    #header-carousel .carousel-item-next,
+    #header-carousel .carousel-item-prev {
+        display: block;
+    }
+
+    #header-carousel .carousel-item:not(.active):not(.carousel-item-next):not(.carousel-item-prev) {
+        display: none !important;
     }
 
     #header-carousel .carousel-caption {
-        padding-inline: 2.5rem;
+        padding: 5rem 3.5rem 3.5rem;
+    }
+
+    #header-carousel .carousel-caption .container {
+        padding-inline: 0;
     }
 
     #header-carousel .carousel-caption p:not(.text-uppercase) {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
         margin-bottom: 1.5rem !important;
     }
 
     #header-carousel .carousel-caption p.text-uppercase {
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.75rem !important;
+    }
+
+    #header-carousel .carousel-caption h1.display-3 {
+        font-size: clamp(1.45rem, 5.5vw, 2.1rem);
+        line-height: 1.25;
+        margin-bottom: 1rem !important;
+    }
+
+    #header-carousel .carousel-caption .btn {
+        padding: 0.75rem 1.75rem !important;
         font-size: 0.95rem;
     }
 
+    /* Controles laterales ubicados en los bordes sin invadir el bloque de texto */
     #header-carousel .carousel-control-prev,
     #header-carousel .carousel-control-next {
-        width: 11%;
+        width: 44px;
+        height: 44px;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        opacity: 0.85;
+        z-index: 5;
+    }
+
+    #header-carousel .carousel-control-prev {
+        left: 6px;
+    }
+
+    #header-carousel .carousel-control-next {
+        right: 6px;
     }
 
     #header-carousel .carousel-control-prev-icon,
     #header-carousel .carousel-control-next-icon {
-        width: 2.25rem;
-        height: 2.25rem;
-        border-width: 8px;
+        width: 2.2rem;
+        height: 2.2rem;
+        border-width: 6px;
     }
 
     /* Encabezados de páginas interiores */
@@ -264,12 +311,14 @@ a[href^="mailto:"],
     }
 
     /* Carrusel de portada en móviles angostos */
-    #header-carousel .carousel-item {
-        min-height: 430px;
+    #header-carousel .carousel-caption {
+        padding: 4.25rem 2.25rem 3.25rem;
     }
 
-    #header-carousel .carousel-caption {
-        padding-inline: 2.1rem;
+    #header-carousel .carousel-caption .animated {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 
     #header-carousel .carousel-caption .btn {
@@ -389,11 +438,11 @@ a[href^="mailto:"],
 
 @media (max-width: 359.98px) {
     #header-carousel .carousel-caption {
-        padding-inline: 1.75rem;
+        padding: 3.75rem 2.25rem 2.75rem;
     }
 
-    .display-3 {
-        font-size: 1.65rem;
+    #header-carousel .carousel-caption h1.display-3 {
+        font-size: 1.35rem;
     }
 
     .display-5 {
