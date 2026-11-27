@@ -135,8 +135,8 @@ p.fw-medium.text-uppercase,
 .back-to-top {
     position: fixed;
     display: none;
-    right: 30px;
-    bottom: 30px;
+    left: 20px;
+    bottom: 20px;
     z-index: 99;
 }
 
@@ -670,6 +670,160 @@ h6,
 .copyright {
     color: #B0B9AE;
     border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-bottom: 5.5rem !important;
+}
+
+/*** Mascota flotante Lottie ***/
+.stcm-mascot-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1020;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.stcm-mascot-bubble {
+    position: relative;
+    pointer-events: auto;
+    background: #ffffff;
+    color: #1a1f24;
+    border: 1px solid rgba(40, 129, 200, .2);
+    border-radius: 16px;
+    padding: 10px 28px 10px 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .14);
+    max-width: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    transition: opacity .25s ease, transform .25s ease;
+}
+
+.stcm-mascot-bubble::after {
+    content: "";
+    position: absolute;
+    right: -7px;
+    bottom: 18px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-right: 1px solid rgba(40, 129, 200, .2);
+    border-bottom: 1px solid rgba(40, 129, 200, .2);
+    transform: rotate(-45deg);
+}
+
+.stcm-mascot-bubble.is-collapsed {
+    opacity: 0;
+    transform: translateY(8px) scale(.95);
+    pointer-events: none;
+    display: none;
+}
+
+.stcm-mascot-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    color: #6c757d;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.stcm-mascot-close:hover {
+    background: rgba(0, 0, 0, .06);
+    color: #1a1f24;
+}
+
+.stcm-mascot-text {
+    margin: 0;
+    font-size: 14px !important;
+    font-weight: 700;
+    color: var(--secondary);
+    line-height: 1.25;
+}
+
+.stcm-mascot-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary);
+    color: #ffffff !important;
+    border: none;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(255, 128, 2, .3);
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.stcm-mascot-cta:hover {
+    background: #e67300;
+    transform: translateY(-1px);
+    color: #ffffff !important;
+}
+
+.stcm-mascot-avatar {
+    pointer-events: auto;
+    width: 96px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    background: transparent;
+    padding: 0;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, .18));
+    transition: transform .2s ease;
+}
+
+.stcm-mascot-avatar:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 576px) {
+    .stcm-mascot-widget {
+        right: 12px;
+        bottom: 12px;
+        gap: 8px;
+    }
+
+    .stcm-mascot-bubble {
+        max-width: 160px;
+        padding: 8px 24px 8px 12px;
+    }
+
+    .stcm-mascot-text {
+        font-size: 13px !important;
+    }
+
+    .stcm-mascot-cta {
+        padding: 5px 12px;
+        font-size: 12px !important;
+    }
+
+    .stcm-mascot-avatar {
+        width: 74px;
+        height: 78px;
+    }
+
+    .back-to-top {
+        left: 12px;
+        bottom: 12px;
+    }
 }
 
 .logo-grande{
