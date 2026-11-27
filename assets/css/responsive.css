@@ -1,0 +1,430 @@
+/* ==========================================================================
+   HOJA DE ESTILOS RESPONSIVE (STCM)
+   Adaptación progresiva para smartphones (320px-600px), tablets (601px-1024px)
+   y preservación íntegra del diseño original en escritorio (>= 1025px).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. REGLAS GLOBALES DE CONTENEDORES, TIPOGRAFÍA Y MEDIOS
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
+/* Evita que enlaces largos (correos electrónicos) o bloques flexibles desborden su contenedor */
+.d-flex > .ms-3,
+.d-flex > .ms-4,
+.d-flex > div:not(.flex-shrink-0) {
+    min-width: 0;
+}
+
+a[href^="mailto:"],
+.text-break {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Escalado fluido de encabezados principales sin alterar escritorio (>= 1200px) */
+@media (max-width: 1199.98px) {
+    .display-1 {
+        font-size: clamp(2.75rem, 7vw, 4.5rem);
+    }
+
+    .display-2 {
+        font-size: clamp(2.35rem, 6vw, 3.75rem);
+    }
+
+    .display-3 {
+        font-size: clamp(1.85rem, 5vw, 3.25rem);
+        line-height: 1.15;
+    }
+
+    .display-5 {
+        font-size: clamp(1.6rem, 4.2vw, 2.5rem);
+        line-height: 1.2;
+    }
+
+    .display-6 {
+        font-size: clamp(1.35rem, 3.5vw, 2rem);
+        line-height: 1.25;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLETS Y PANTALLAS MEDIANAS (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    /* En about.html (col-lg-5) la columna derecha es estrecha a 992-1024px:
+       permitimos que los badges de estadísticas se adapten sin desbordar */
+    .stat-badges .badge {
+        font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+        padding: 0.55rem 0.95rem;
+    }
+
+    .experience-badge + .ms-4 {
+        flex: 1 1 0%;
+        min-width: 0;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS PEQUEÑAS Y COLAPSO DE NAVEGACIÓN (<= 991.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    /* Evita que las imágenes de Misión/Visión en about.html queden desproporcionadas */
+    img[style*="height: 420px"] {
+        height: 300px !important;
+    }
+
+    /* Botón de cotización en 404.html dentro del menú colapsado */
+    .site-navigation .site-quote-button {
+        width: 100%;
+        margin-top: 4px;
+        text-align: center;
+    }
+
+    /* Barra de herramientas de equipos */
+    .equipos-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .equipos-search-box {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. SMARTPHONES GRANDES Y MÓVILES HORIZONTALES (<= 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    /* Carrusel de portada: espacio lateral para que las flechas no tapen el texto */
+    #header-carousel .carousel-item {
+        min-height: 460px;
+    }
+
+    #header-carousel .carousel-caption {
+        padding-inline: 2.5rem;
+    }
+
+    #header-carousel .carousel-caption p:not(.text-uppercase) {
+        font-size: 1rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    #header-carousel .carousel-caption p.text-uppercase {
+        font-size: 0.95rem;
+    }
+
+    #header-carousel .carousel-control-prev,
+    #header-carousel .carousel-control-next {
+        width: 11%;
+    }
+
+    #header-carousel .carousel-control-prev-icon,
+    #header-carousel .carousel-control-next-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-width: 8px;
+    }
+
+    /* Encabezados de páginas interiores */
+    .page-header {
+        margin-bottom: 2rem !important;
+    }
+
+    .page-header .container {
+        padding-top: 1.75rem !important;
+        padding-bottom: 1.75rem !important;
+    }
+
+    /* Tarjetas de servicios en portada (.service-item): altura mínima cómoda */
+    .service-item {
+        min-height: 280px;
+        background-color: #ffffff;
+    }
+
+    .service-item > img.img-fluid {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    /* Catálogo de equipos */
+    .equipos-cta-banner {
+        padding: 28px 22px;
+    }
+
+    .equipos-cta-title {
+        font-size: clamp(1.25rem, 4vw, 1.55rem);
+    }
+
+    .equipos-cta-desc {
+        font-size: 0.95rem;
+    }
+
+    .product-main-view {
+        height: 230px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. ACCESIBILIDAD EN PANTALLAS TÁCTILES (sin hover)
+   En dispositivos táctiles las tarjetas .service-item de portada muestran
+   título legible sin depender únicamente de :hover
+   -------------------------------------------------------------------------- */
+@media (hover: none), (pointer: coarse) {
+    .service-item:active .service-title,
+    .service-item:focus-within .service-title {
+        top: -100%;
+    }
+
+    .service-item:active .service-text,
+    .service-item:focus-within .service-text {
+        top: 0;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   6. SMARTPHONES CONVENCIONALES Y PEQUEÑOS (<= 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    p,
+    li,
+    .service-text p,
+    .form-control,
+    .form-select,
+    .form-floating > label,
+    .footer p,
+    .footer a,
+    .copyright p {
+        font-size: 16px;
+    }
+
+    /* Bloque de años de experiencia + lista de sectores/servicios:
+       se apilan verticalmente para evitar compresión o desbordamiento */
+    .d-flex:has(> .experience-badge) {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 1rem;
+    }
+
+    .experience-badge {
+        align-self: flex-start;
+        padding: 1rem 1.25rem !important;
+    }
+
+    .experience-badge + .ms-4 {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .stat-badges .badge {
+        font-size: 0.92rem;
+        padding: 0.48rem 0.85rem;
+    }
+
+    /* Imágenes "Sobre nosotros" y Misión/Visión */
+    .about-img {
+        height: 220px;
+    }
+
+    img[style*="height: 420px"] {
+        height: 210px !important;
+    }
+
+    /* Evita ríos de espaciado en texto justificado en pantallas angostas */
+    p[style*="text-align: justify"] {
+        text-align: left !important;
+    }
+
+    /* Tarjetas de clientes */
+    .client-card {
+        height: 120px;
+        padding: 14px;
+    }
+
+    .client-card img {
+        max-height: 64px;
+    }
+
+    /* Carrusel de portada en móviles angostos */
+    #header-carousel .carousel-item {
+        min-height: 430px;
+    }
+
+    #header-carousel .carousel-caption {
+        padding-inline: 2.1rem;
+    }
+
+    #header-carousel .carousel-caption .btn {
+        padding: 0.7rem 1.4rem !important;
+        font-size: 0.95rem;
+    }
+
+    /* Página de servicios */
+    .service-highlight-banner {
+        padding: 18px 16px;
+    }
+
+    .service-filter-nav {
+        gap: 8px;
+        margin-bottom: 1.75rem;
+    }
+
+    .service-filter-btn {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .service-card-body {
+        padding: 24px 18px 18px;
+    }
+
+    .service-card-footer {
+        flex-wrap: wrap;
+    }
+
+    /* Catálogo de equipos */
+    .equipos-trust-bar {
+        padding: 14px 16px;
+    }
+
+    .equipos-toolbar {
+        padding: 14px;
+    }
+
+    .equipos-filter-btn {
+        padding: 7px 13px;
+        font-size: 0.82rem;
+    }
+
+    .amazon-product-card {
+        padding: 16px;
+    }
+
+    .product-thumbnails {
+        flex-wrap: wrap;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 8px 10px;
+        font-size: 0.82rem;
+    }
+
+    /* Página de contacto */
+    #contactForm .btn[type="submit"] {
+        width: 100%;
+        padding: 0.85rem 1.5rem !important;
+    }
+
+    iframe[src*="google.com/maps"] {
+        min-height: 280px !important;
+        height: 300px !important;
+    }
+
+    /* Footer: espacio inferior suficiente para mascota + botón volver arriba */
+    .footer .row.g-5 {
+        --bs-gutter-y: 2rem;
+    }
+
+    .copyright {
+        padding-bottom: 6.5rem !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   7. SMARTPHONES MUY PEQUEÑOS (<= 430px y <= 359.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 430px) {
+    .stcm-mascot-widget {
+        right: 10px;
+        bottom: 10px;
+        gap: 6px;
+    }
+
+    .stcm-mascot-bubble {
+        max-width: 145px;
+        padding: 7px 22px 7px 10px;
+        border-radius: 12px;
+    }
+
+    .stcm-mascot-text {
+        font-size: 12px !important;
+    }
+
+    .stcm-mascot-cta {
+        padding: 4px 10px;
+        font-size: 11.5px !important;
+    }
+
+    .stcm-mascot-avatar {
+        width: 64px;
+        height: 68px;
+    }
+
+    .back-to-top {
+        left: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    #header-carousel .carousel-caption {
+        padding-inline: 1.75rem;
+    }
+
+    .display-3 {
+        font-size: 1.65rem;
+    }
+
+    .display-5 {
+        font-size: 1.45rem;
+    }
+
+    .stcm-mascot-bubble {
+        max-width: 132px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   8. PREFERENCIA DE MOVIMIENTO REDUCIDO
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .stcm-mascot-avatar:hover,
+    .stcm-mascot-cta:hover,
+    .service-card-modern:hover,
+    .amazon-product-card:hover,
+    .client-card:hover,
+    .benefit-item:hover,
+    .team-item-small:hover {
+        transform: none !important;
+    }
+}
